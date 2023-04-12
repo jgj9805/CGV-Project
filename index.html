@@ -121,12 +121,30 @@
             </nav>
         </div>
     </div>
+    <div class="main_container">
+    <div id="ctl00_PlaceHolderContent_divMovieSelection_wrap" class="movieSelection_wrap">
+        <div class="contents">
+            <div class="video_wrap">
+            <video autoplay="" id=main_video muted="">
+                <source src="vod/0407_Rebound_1080x608.mp4" type="video/mp4">
+            </video>
+                <strong id="ctl00_PlaceHolderContent_AD_MOVIE_NM" class="movieSelection_title">리바운드</strong>
+                <span id="ctl00_PlaceHolderContent_AD_DESCRIPTION_NM" class="movieSelection_txt">"한국영화 기강 잡는 장항준"<br>만족도 MAX! 예매로 확인 ▶</span>
+                <div class="movieSelection_video_controller_wrap">
+                    <a href="#" id="ctl00_PlaceHolderContent_AD_CLIP_DETAIL_URL" class="btn_movieSelection_detailView">상세보기 <span class="material-symbols-outlined arr">
+                        arrow_forward_ios
+                        </span></a>
+                    
+                    <button onclick="video_pause()"><a href="#"  class="btn_movieSelection_playStop" id="ctl00_PlaceHolderContent_playStop"><span class="material-symbols-outlined" id="main_pause">pause</span></a></button>
+                    <button onclick="video_mute()"><a href="#" id="ctl00_PlaceHolderContent_soundOnOff" class="btn_movieSelection_soundOnOff"><span class="material-symbols-outlined" id="main_sound">volume_off</span></a></button>
 
-
-
-
-
-
+                    <input name="ctl00$PlaceHolderContent$AD_CNT_URL" type="hidden" id="ctl00_PlaceHolderContent_AD_CNT_URL" 
+                    value="http://ad.cgv.co.kr/NetInsight/imp/CGV/CGV_201401/main@MovieSelection2021?ads_id%3d48889%26creative_id%3d70327">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <footer>
         <ul class="policy_list">
             <li><a href="#" target="_blank">회사소개</a></li>
@@ -147,7 +165,7 @@
                 <address>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</address>
                 <dl class="company_info_list">
                     <dt>대표이사</dt>
-                    <dd>허민희</dd>
+                    <dd>허민회</dd>
                     <dt>사업자등록번호</dt>
                     <dd>104-81-45690</dd>
                     <dt>통신판매업신고번호</dt>
