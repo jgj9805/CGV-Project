@@ -137,13 +137,295 @@
                     
                     <button onclick="video_pause()"><a href="#"  class="btn_movieSelection_playStop" id="ctl00_PlaceHolderContent_playStop"><span class="material-symbols-outlined" id="main_pause">pause</span></a></button>
                     <button onclick="video_mute()"><a href="#" id="ctl00_PlaceHolderContent_soundOnOff" class="btn_movieSelection_soundOnOff"><span class="material-symbols-outlined" id="main_sound">volume_off</span></a></button>
-
-                    <input name="ctl00$PlaceHolderContent$AD_CNT_URL" type="hidden" id="ctl00_PlaceHolderContent_AD_CNT_URL" 
-                    value="http://ad.cgv.co.kr/NetInsight/imp/CGV/CGV_201401/main@MovieSelection2021?ads_id%3d48889%26creative_id%3d70327">
                 </div>
             </div>
         </div>
     </div>
+    <div class="movieChartBeScreen_wrap">
+        <div class="contents">
+            <div class="movieChartBeScreen_btn_wrap">
+                <div class="tabBtn_wrap">
+                    <h3><a href="#none" class="active" id="btnMovie">무비차트</a></h3>
+                    <h3><a href="#none" id="btnReserMovie">상영예정작</a></h3>
+                </div>
+                <a href="#" id="btn_allView_Movie" class="btn_allView">전체보기 <span class="material-symbols-outlined arr"> 
+                     arrow_forward_ios
+                    </span></a></a>
+            </div>
+
+            <div class="swiper movieChart_list swiper-container-initialized swiper-container-horizontal" id="movieChart_list">
+                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                    
+                        <div class="swiper-slide swiper-slide-movie swiper-slide-active" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/JW.jpg" alt="존 윅 4">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc age18"><img src="images/18.svg" alt="18">18</i>
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                    <i class="screenType"><img src="images/imax_white.png" alt="imax"></i>
+                                    
+                                    <i class="screenType"><img src="images/forDX_white.png" alt="forDX"></i>
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#" class="btn_movieChart_ticketing">예매하기</a>
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">존 윅 4</strong>
+                                <span> <img src="images/eggGoldenegggreat.png" alt="Golden Egg great"> 95%</span>
+                                <span>예매율 39.1%</span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="swiper-slide swiper-slide-movie swiper-slide-next" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/SLAMDUNK.jpg" alt="더 퍼스트 슬램덩크">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc age12"><img src="images/12.svg" alt="12">12</i> 
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                    <i class="screenType"><img src="images/imax_white.png" alt="imax"></i>
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#" class="btn_movieChart_ticketing">예매하기</a>
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">더 퍼스트 슬램덩크</strong>
+                                <span> <img src="images/eggGoldenegggreat.png" alt="Golden Egg great"> 97%</span>
+                                <span>예매율 9.8%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/REBOUND.jpg" alt="리바운드">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc age12"><img src="images/12.svg" alt="12">12</i>
+
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#" class="btn_movieChart_ticketing">예매하기</a>
+                                
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">리바운드</strong>
+                                <span> <img src="images/eggGoldenegggreat.png" alt="Golden Egg great"> 98%</span>
+                                <span>예매율 8.3%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/KillingRomance.jpg" alt="킬링 로맨스">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc age15"><img src="images/15.svg" alt="15"> 15</i>
+                                    <i class="cgvIcon etc ageDay" data-before-text="D - 1">D Day</i>
+                                
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#" class="btn_movieChart_ticketing">예매하기</a>
+                                
+                                
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">킬링 로맨스</strong>
+                                <span> <img src="images/eggGoldeneggPreegg.png" alt="Golden Egg Preegg"> 99%</span>
+                                <span>예매율 7.9%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/station.jpg" alt="옥수역귀신">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc age15"><img src="images/15.svg" alt="15"> 15</i>
+                                    <i class="cgvIcon etc ageDay" data-before-text="D - 6">D Day</i>
+                                
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#" class="btn_movieChart_ticketing">예매하기</a>
+                                
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">옥수역귀신</strong>
+                                <span> <img src="images/eggGoldeneggPreegg.png" alt="Golden Egg Preegg"> 99%</span>
+                                <span>예매율 7.1%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/Suzume.jpg" alt="스즈메의 문단속">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc age12"><img src="images/12.svg" alt="12"> 12</i>
+                                
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#" class="btn_movieChart_ticketing">예매하기</a>
+                                                           
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">스즈메의 문단속</strong>
+                                <span> <img src="images/eggGoldenegggreat.png" alt="Golden Egg great"> 94%</span>
+                                <span>예매율 5.7%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/RanFiled.jpg" alt="렌필드">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc ageNotyet"><img src="images/18.svg" alt="18"></i>
+                                    <i class="cgvIcon etc ageDay" data-before-text="D - 6">D Day</i>
+                                
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#"  class="btn_movieChart_ticketing">예매하기</a>
+                                
+                                
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">렌필드</strong>
+                                <span> <img src="images/eggGoldeneggPreegg.png" alt="Golden Egg Preegg"> 99%</span>
+                                <span>예매율 4.4%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/Inception.jpg" alt="인셉션">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc age12"><img src="images/12.svg" alt="12"> 12</i>
+
+                                    <i class="cgvIcon etc ageDay" data-before-text="D - 6">D Day</i>
+                                
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                    <i class="screenType"><img src="images/imax_white.png" alt="imax"></i>
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#" class="btn_movieChart_ticketing">예매하기</a>
+                                
+                                
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">인셉션</strong>
+                                <span> <img src="images/eggGoldeneggPreegg.png" alt="Golden Egg Preegg"> 99%</span>
+                                <span>예매율 4.0%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/Mario.jpg" alt="슈퍼 마리오 브라더스">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc ageAll"><img src="images/All.svg" alt="all"> All</i>
+
+                                    <i class="cgvIcon etc ageDay" data-before-text="D - 13">D Day</i>
+                                
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                    <i class="screenType"><img src="images/imax_white.png" alt="imax"></i>
+                                    
+                                    <i class="screenType"><img src="images/forDX_white.png" alt="forDX"></i>
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#" class="btn_movieChart_ticketing">예매하기</a>
+                                
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">슈퍼 마리오 브라더스</strong>
+                                <span> <img src="images/eggGoldeneggPreegg.png" alt="Golden Egg Preegg"> 99%</span>
+                                <span>예매율 3.2%</span>
+                            </div>
+                        </div> 
+                        
+                        <div class="swiper-slide swiper-slide-movie" style="width: 170.4px; margin-right: 32px;">
+                            <div class="img_wrap" data-scale="false">
+                                <img src="images/Inception.jpg" alt="인셉션">
+                                <div class="movieAgeLimit_wrap">
+                                    <i class="cgvIcon etc age12"><img src="images/12.svg" alt="12"> 12</i>
+
+                                    <i class="cgvIcon etc ageDay" data-before-text="D - 6">D Day</i>
+                                
+                                </div>
+                                <div class="screenType_wrap">
+                                    
+                                    <i class="screenType"><img src="images/imax_white.png" alt="imax"></i>
+                                    
+                                </div>
+                                <div class="movieChart_btn_wrap">
+                                    <a href="#" class="btn_movieChart_detail">상세보기</a>
+                                
+                                    <a href="#" class="btn_movieChart_ticketing">예매하기</a>
+                                
+                                
+                                </div>
+                            </div>
+                            <div class="movie_info_wrap">
+                                <strong class="movieName">인셉션</strong>
+                                <span> <img src="images/eggGoldeneggPreegg.png" alt="Golden Egg Preegg"> 99%</span>
+                                <span>예매율 4.0%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                    <span class="swiper-button-next"><img src="images/arrowL.png" alt="arrowR"></span>
+                    <span class="swiper-button-prev swiper-button-disabled"></span> 
+            </div>      
+        </div>
     </div>
     <footer>
         <ul class="policy_list">
