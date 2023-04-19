@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+@import url(reset.css);
+@import url('animate.css');
+*{box-sizing: border-box;}
+body{
+    font-family: 'Noto Sans KR',sans-serif;
+}
+.container{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.heading{
+    height: 93px;
+    padding-top:30px ;
+    display: flex;
+    justify-content: space-between;
+}
+.heading>h3{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0;
+    color: #070707;
+}
+.on{
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.on>li:first-child>a{
+    color: #fb4357;
+}
+.on>li>a{
+    color: #666;
+    font-size: 14px;
+    padding-left: 10px;
+}
+/*--------------------scroll----------------------------*/
+.pull-box{
+    width: 100%;
+    position: relative;
+}
+.scroll-box{
+
+    display:none;
+    bottom:50px;
+    right:150px;
+    position:fixed;
+}
+#reserv{
+    display: inline-block;
+    width: 110px;
+    background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    /* transition: right 0.4s; */
+}
+/******************************HEADER (GYUJIN)****************************************/
+.header{
+    position: relative;
+    z-index: 101;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.header_content .contents h1 a img {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+.header_content .contents h1 {
+    display: inline-flex;
+    align-items: flex-end;
+    height: 53px;
+}
+.header_content .contents h1 a {
+    display: block;
+    float: left;
+    height: 100%;
+}
+.header_content .contents h1 span {
+    font-weight: 300;
+    font-size: 16px;
+    color: #222;
+    letter-spacing: 0.313em;
+    line-height: 1.500em;
+}
+.header_content{
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+.header_content .contents{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 6px 25px 5px;
+    background: #fff;
+}
+.header .contents {
+    width: 980px;
+    margin: 0 auto;
+}
+.memberInfo_wrap {
+    display: flex;
+    align-items: center;
+}
+.memberInfo_wrap li {
+    margin-left: 44px;
+    margin-top: 2px;
+}
+.memberInfo_wrap li a {
+    display: block;
+    position: relative;
+    padding-bottom: 19px;
+}
+.memberInfo_wrap li a img {
+    width: 36px;
+    height: 36px;
+}
+.memberInfo_wrap li a span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.462em;
+    white-space: nowrap;
+}
+.nav .contents {
+    position: relative;
+}
+.header .contents {
+    width: 980px;
+    margin: 0 auto;
+}
+.nav{
+    position: absolute;
+    left: 0;
+    top: 130px;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #fff;
+}
+.nav.fixed {
+    position: fixed;
+    top: 0px;
+    min-width: 1040px;
+    padding: 10px 0;
+}
+.nav:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 61px;
+    width: 100%;
+    height: 2px;
+    background-color: #fb4357;
+}
+.nav_menu {
+    display: inline-flex;
+}
+.nav_menu > li:first-child {
+    width: 137px;
+}
+.nav_menu > li {
+    width: 162px;
+    padding: 20px 0;
+}
+.nav_menu > li:last-child {
+    width: 195px;
+}
+.nav_menu > li > h2 > a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+}
+.nav_menu > li:first-child .nav_overMenu {
+    padding-left: 0;
+}
+
+.nav_menu > li > h2 {
+    position: absolute;
+    top: 7px;
+}
+.nav_menu > li > h2 > a strong {
+    font-weight: 700;
+    color: #fb4357;
+}
+.nav_menu > li:nth-child(2) > h2 {
+    left: 80px;
+}
+.nav_menu > li:nth-child(3) > h2 {
+    left: 160px;
+}
+.nav_menu > li:nth-child(4) > h2 {
+    left: 240px;
+}
+.nav_menu > li:nth-child(5) > h2 {
+    left: 335px;
+}
+.nav_menu > li:nth-child(6) > h2 {
+    left: 430px;
+}
+.nav_overMenu {
+    display: none;
+    position: relative;
+    margin-bottom: 8px;
+    padding: 25px 0 0 25px;
+}
+.nav_overMenu dt {
+    padding-top: 18px;
+}
+.nav_overMenu dt a {
+    font-weight: 700;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+}
+.nav_overMenu dd {
+    margin-top: 8px;
+    height: auto;
+    margin: 0;
+    line-height: 1em;
+    text-align: left;
+    background-image: none;
+}
+.nav_overMenu dd a {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    line-height: 2.143em;
+}
+.totalSearch_wrap {
+    display: inline-flex;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    padding: 0 10px 0 10px;
+}
+.totalSearch_wrap:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 1px;
+    height: 20px;
+    background-color: #cacaca;
+}
+.totalSearch_wrap:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 1px;
+    height: 20px;
+    background-color: #cacaca;
+}
+.box{
+    height: 1500px;
+    background-color: aqua;
+}
+/******************************HEADER END (GYUJIN)****************************************/
+
+/*------------------------------------영화시작(병기)--------------------------------------*/
+/*------------------------------------무비차트 안에 라인----------------------------*/
+
+.line{
+    width: 980px;
+    height: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #333333;
+}
+
+/*------------------------------------끝!----------------------------*/
+
+.sect-sorting{
+    height: 29px;
+    margin-top: 20px;
+    position: relative;
+    text-align: right;
+}
+.nowshow{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.nowshow input{
+    margin: 0;
+}
+.nowshow label{
+    font-size: 13px;
+    color: #666;
+}
+select{
+    border: 1px solid #666;
+    width: 90px;
+    height: 25px;
+}
+.nowshow-ck{
+    vertical-align: middle;
+}
+button{
+    width: 27px;
+    height: 23px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+.btn-go{
+    border: 2px solid #666;
+    border-radius: 5px;
+    width: 35px;
+    background: #fff;
+    vertical-align: bottom;
+}
+.btn-go>span{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/*-------------------------영화 차트 시작----------------------------*/
+.movie-chart{
+    margin-top: 30px;
+    /* height: 6000px; */
+}
+.movie-chart ol{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.movie-chart .last_ol{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    list-style: none;
+    /* display: flex; */
+}
+.box-img{
+    position: relative;
+    width: 197px;
+    min-height: 272px;
+    margin-bottom: 10px;
+}
+.box-img img{
+    height: 281px;
+}
+.icon_ageall img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    left: 5px;
+}
+.icon_age12 img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    left: 5px;
+}
+.icon_age18 img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    left: 5px;
+}
+.icon_age15 img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    left: 5px;
+}
+.cgv_imax{
+    position: absolute;
+    color: #cdcaca;
+    font-size: 16px;
+    font-weight: bold;
+    bottom: 110px;
+    left: 80px;
+}
+.cgv_screenx{
+    position: absolute;
+    color: #cdcaca;
+    font-size: 12px;
+    font-weight: bold;
+    bottom: 110px;
+    left: 68px;
+}
+.cgv_imax-4dx{
+    position: absolute;
+    color: #cdcaca;
+    font-size: 16px;
+    font-weight: bold;
+    bottom: 110px;
+    left: 50px;
+}
+.cgv_imax-4dx>a{
+    padding-left: 5px;
+}
+.number{
+    background: #333333;
+    display: block;
+    height: 28px;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 3px;
+}
+.number1{
+    background: #fb4357;
+    display: block;
+    height: 28px;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 3px;
+}
+.chart-body>p{
+    margin: 0;
+}
+.chart-body>a>h1{
+    font-size: 15px;
+    color: #333333;
+    margin: 0;
+    margin-top: 7px;
+    width:185px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.percent{
+    font-size: 11px;
+}
+.last-percent{
+    font-size: 11px;
+}
+.last-percent>span{
+    padding-left: 5px;
+    color: #fb4357;
+    font-weight: bold;
+}
+.bangdefault{
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    background-position: 0 0;
+}
+.bangpregg{
+    background: url(/images/icond.png) no-repeat 0 0;
+    background-size: 300px;
+}
+.like{
+    position: relative;
+    margin-top: 5px;
+    background: #fb4357;
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    width: 93px;
+    height: 23px;
+    padding-bottom: 25px;
+    border-radius: 3px;
+}
+.like>a{
+    position: absolute;
+    margin-top: 3px;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 18px;
+}
+
+/*-------------------ol 첫번째줄 광고 디자인---------------*/
+.chart-ad{
+    width: 197px;
+    height: 410px;
+    background: #222222;
+}
+.box-com{
+    padding: 10px 14px 12px;
+    border: 1px solid #070707;
+    background: #222221;
+}
+.box-com img{
+    padding-top: 5px;
+    margin-left: 5px;
+}
+.chart_ad_desc{
+    margin-left: auto;
+    margin-right: auto;
+}
+.chart_ad_desc>dl{
+    margin: 0;
+    margin-top: 10px;
+}
+.chart_ad_desc>dl>dt{
+    font-size: 14px;
+    padding-left: 35px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+.chart_ad_desc>dl>dd{
+    height: 32px;
+    margin: 0 3px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    padding-top: 3px;
+    font-size: 14px;
+    color: #fff;
+}
+.last_ad_desc{
+    padding-left: 10px;
+}
+/*------------------------END-------------------------------*/
+
+/*--------------------------중간 광고-----------------------*/
+.box-banner{
+    margin-bottom: 20px;
+}
+/*------------------------END------------------------------*/
+
+/*-----------------plusmovie_chart---------------------------*/
+.plusmovie_chart{
+    margin-top: 50px;
+    display: none;
+}
+.plusmovie_chart .icon_ageall img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+}
+.plusmovie_chart .icon_age12 img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+}
+.plusmovie_chart .icon_age18 img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+}
+.plusmovie_chart .icon_age15 img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+}
+.plusmovie_chart .cgv_imax{
+    position: absolute;
+    color: #cdcaca;
+    font-size: 16px;
+    font-weight: bold;
+    bottom: 95px;
+    left: 80px;
+}
+.plusmovie_chart .cgv_screenx{
+    position: absolute;
+    color: #cdcaca;
+    font-size: 12px;
+    font-weight: bold;
+    bottom: 95px;
+    left: 68px;
+}
+.plusmovie_chart .cgv_imax-4dx{
+    position: absolute;
+    color: #cdcaca;
+    font-size: 16px;
+    font-weight: bold;
+    bottom: 95px;
+    left: 50px;
+}
+.plusmovie_chart .cgv_imax-4dx>a{
+    padding-left: 5px;
+}
+
+/*--------------------------plus button--------------------*/
+.btn-box{
+    text-align: right;
+    margin-bottom: 50px;
+}
+.plus-button{
+    /* float: right; */
+    margin-top: 10px;
+    width: 65px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 700;
+    border : transparent;
+    background: #fff;
+}
+.plus-button>i{
+    font-size: 15px;
+}
+
+/*-----------------------------------------영화끝(병기)-----------------------------------*/
+
+
+
+/*----------------------------------------혜택시작(병기)-----------------------------------*/
+/*------------------------------------------------*/
+.container{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+.heading{
+    height: 93px;
+    padding-top:30px ;
+    display: flex;
+    justify-content: space-between;
+}
+.heading>h3{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0;
+}
+.submenu{
+    width: 40%;
+}
+.submenu>ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.submenu>ul>li{
+    margin: 0;
+}
+.submenu>ul>li>a{
+    display: inline-block;
+    padding-left: 13px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.submenu>ul>li>a:hover{
+    color: #fb4357;
+}
+/*------------------------------------CGV할인정보 안에 라인----------------------------*/
+
+.line{
+    width: 980px;
+    height: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #333333;
+}
+
+/*------------------------------------끝!----------------------------*/
+/*-------------------------------------cgvSaleInfo--------------------------------*/
+/* .cgvSaleInfo{
+    height: 1900px;
+} */
+
+.mySlides {display: none}
+/* Slideshow container */
+.slideshow-container{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.left-sildeshow{
+    width: 90%;
+}
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 245px;
+    border-radius: 3px 0 0 3px;
+  }
+  .dots{
+    margin-left: 40%;
+    margin-top: 10px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .activea{
+    background: #717171;
+  }
+  .dot:hover{
+    background: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .right-sildeshow{
+    width: 30%;
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .slideshow-container .img-box{
+    width: 30%;
+    margin-left: 10px;
+  }
+  .img-box img{
+    margin-left: 20px;
+    height: 310px;
+  }
+
+  /*-------------------silde-----------------------------------------------*/
+  
+
+  /*-------------------------cgvSaleTab_wrap-------------------------*/
+  .cgvSaleTab_wrap{
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .cgvSaleTab_wrap>ul{
+    display: flex;
+    border-bottom: 1px solid #666;
+    height: 60px;
+  }
+  .cgvSaleTab_wrap>ul>li{
+    margin-right: 40px;
+  }
+  .cgvSaleTab_wrap>ul>li>a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #6a6f77;
+    line-height: 40px;
+  }
+/*-------------------------cgvSaleTab_wrap-------------------------*/
+
+
+/*--------------------------cgvSaleTab-content-------------------------*/
+.cgvSaleTab-content ol{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.cgvSaleTab-content ol li{
+    border: 1px solid #e1e1e1;
+    height: 325px;
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.bang-btn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    width: 980px;
+    height: 70px;
+    background: #f8f8f8;
+}
+.bang-btn:last-child{
+    display: none;
+}
+.evt-box img{
+    width: 315px;
+    height: 210px;
+}
+.evt-body{
+    height: 70px;
+}
+.evt-body h1{
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-left: 10px;
+    width: 305px;
+    height: 50px;
+    line-height: 25px;
+}
+.evt-body p{
+    padding-left: 10px;
+    /* padding-top: 20px; */
+}
+/*--------------------------cgvSaleTab-content-------------------------*/
+
+
+/* ----------------------------cgvSaleTab-center-content------------------------------- */
+.cgvSaleTab-center-content{
+    display: none;
+}
+
+/* ----------------------------cgvSaleTab-center-content------------------------------- */
+
+
+
+/*----------------------------------------혜택끝(병기)-----------------------------------*/
+
+
+#reserv{
+    position:absolute;
+    top:6px;
+    right:0;
+}
+
+
+
+
+/****************************** FOOTER (GYUJIN)****************************************/
+footer {
+    min-width: 1040px;
+    padding: 0 0 14px;
+    background-color: #f8f8f8;
+}
+footer .policy_list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 23px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+footer .policy_list li a {
+    font-weight: 500;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.462em;
+}
+footer .policy_list li a strong {
+    font-weight: 700;
+    color: #222;
+    text-decoration: underline;
+}
+footer .company_info_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 23px 0;
+}
+.company_info {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.667em;
+}
+.company_info address {
+    font-style: normal;
+}
+.company_info .company_info_list {
+    display: flex;
+}
+.company_info .company_info_list dt:after {
+    content: ':';
+    padding: 0 4px;
+}
+
+
+/****************************** FOOTER END (GYUJIN)****************************************/
+
+
+/*--------------------------scroll----------------*/
+#scrollUp{
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    width:50px;
+    height:50px;
+    padding-top: 13px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #333333;
+    border-radius: 25px;
+}
+#scrollUp>i{
+    font-size:20px;
+    color:#333333;
+}
