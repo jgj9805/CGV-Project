@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV_STORE</title>
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/store.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="cgvwrap">
+        <div class="header">
+            <div class="header_content">
+                <div class="contents">
+                <h1 onclick>
+                    <a href="#">
+                        <img src="images/logoRed.png" alt="CGV">
+                    </a>
+                    <span>CULTUREPLEX</span>
+                </h1>
+                <ul class="memberInfo_wrap">
+                    <div class="ad-parter">
+                        <a href="#">
+                            <img src="images/16758461047540.png" alt="현대">
+                        </a>
+                    </div>
+                    <li><a href="#"><img src="images/loginPassword.png" alt="로그인">
+                        <span>로그인</span>
+                    </a></li>
+                    <li><a href="#"><img src="images/loginJoin.png" alt="회원가입">
+                        <span>회원가입</span>
+                    </a></li>
+                    <li><a href="#"><img src="images/loginMember.png" alt="MY CGV">
+                        <span>MY CGV</span>
+                    </a></li>
+                    <li><a href="#"><img src="images/loginCustomer.png" alt="고객센터">
+                        <span>고객센터</span>
+                    </a></li>
+                </ul>
+            </div>
+            </div>
+            <div class ="nav">
+                <div class="contents">
+                    <!-- <h1>
+                        <a href="#  ">
+                            <img src="images/logoWhite.png" alt="logowhite">
+                        </a>
+                    </h1> -->
+                        <ul class="nav_menu">
+                            <li>
+                                <h2><a href="#">영화</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">영화</a></h2></dt>
+                                    <dd><a href="#">무비차트</a></dd>
+                                    <dd><a href="#">아트하우스</a></dd>
+                                    <dd><a href="#">icecon</a></dd>
+                                </dl>
+                            </li> 
+                            <li>
+                                <h2><a href="#">극장</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">극장</a></h2></dt>
+                                    <dd><a href="#">cgv 극장</a></dd>
+                                    <dd><a href="#">특별관</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <h2><a href="#"><strong>예매</strong></a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">예매</a></h2></dt>
+                                    <dd><a href="#">빠른 예매</a></dd>
+                                    <dd><a href="#">상영스케줄</a></dd>
+                                    <dd><a href="#">English Ticketing</a></dd>
+                                    <dd><a href="#">English Schedule</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <h2><a href="#">스토어</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">스토어</a></h2></dt>
+                                    <dd><a href="#">패키지</a></dd>
+                                    <dd><a href="#">영화관람권</a></dd>
+                                    <dd><a href="#">기프트카드</a></dd>
+                                    <dd><a href="#">콤보</a></dd>
+                                    <dd><a href="#">팝콘</a></dd>
+                                    <dd><a href="#">음료</a></dd>
+                                    <dd><a href="#">스낵</a></dd>
+                                    <dd><a href="#">플레이존</a></dd>
+                                    <dd><a href="#">씨네샵 ></a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <h2><a href="#">이벤트</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">이벤트</a></h2></dt>
+                                    <dd><a href="#">SPECIAL</a></dd>
+                                    <dd><a href="#">영화/예매</a></dd>
+                                    <dd><a href="#">멤버십/club</a></dd>
+                                    <dd><a href="#">CGV 극장별</a></dd>
+                                    <dd><a href="#">제휴할인</a></dd>
+                                    <dd><a href="#">당첨자 발표</a></dd>
+                                    <dd><a href="#">종료된 이벤트</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <h2><a href="#">혜택</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">혜택</a></h2></dt>
+                                    <dd><a href="#">CGV 할인정보</a></dd>
+                                    <dd><a href="#">CLUB 서비스</a></dd>
+                                    <dd><a href="#">VIP 라운지</a></dd>
+                                </dl>
+                            </li>
+                        </ul> 
+                        <div class="totalSearch_wrap">
+                            <label for="totalSearch">
+                                <input type="text" id="header_keyword" value="" placeholder="뱅기짱의 가출 모험">
+                                <input type="hidden" id="header_ad_keyword" name="header_ad_keyword" value="뱅기짱의 가출 모험">
+                            </label>
+                            <button type="button" class="btn_totalSearch" id="btn_header_search"><span class="material-symbols-outlined">
+                                search
+                                </span></button>
+                        </div>               
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- /HEADER -->
+
+
+    <div class="store-container">
+        <div class="mainimgbox">
+            <a href="#">
+                <img src="images/main-image.jpeg" alt="main-image">
+            </a>
+        </div>
+        <div class="category-wrap" id="CW">
+            <div class="category-content-wrap">
+                <ul class="category-list">
+                    <li><a href="#">패키지</a></li>
+                    <li><a href="#">영화관람권</a></li>
+                    <li><a href="#">기프트카드</a></li>
+                    <li><a href="#">콤보</a></li>
+                    <li><a href="#">팝콘</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">스낵</a></li>
+                    <li><a href="#">플레이존</a></li>
+                    <li><a href="#">상품권소개</a></li>
+                </ul>
+                <ul class="cart-list">
+                    <li>
+                        <a href="#">내 기프티콘</a>
+                        <span>0</span>
+                    </li>
+                    <li>
+                        <a href="#">장바구니</a>
+                        <span>0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--패키지-->
+        <div class="category-product-wrap">
+            <ul class="CP-list">
+                <li>
+                    <strong class="CP-title">
+                        패키지
+                        <a href="#" class="btn-CP"></a>
+                    </strong>
+                    <ul class="CP-Ilist">
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/우리패키지.jpeg" alt="우리패키지">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">우리패키지</span>
+                                    <span class="PT-name"></span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">61,000원</span>
+                                        <span class="detail-sale-price">65,000원</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/나랑너패키지.jpeg" alt="나랑너패키지">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">나랑 너 패키지</span>
+                                    <span class="PT-name"></span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">34,000원</span>
+                                        <span class="detail-sale-price">36,000원</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/좋은날패키지.jpeg" alt="좋은날패키지">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">좋은 날 패키지</span>
+                                    <span class="PT-name">좋은 날엔 CGV와 함께 하세요!</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">18,000원</span>
+                                        <span class="detail-sale-price">20,000원</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/패키지-->
+                <!--영화관람권-->
+                <li>
+                    <strong class="CP-title">
+                        영화관람권
+                        <a href="#" class="btn-CP"></a>
+                    </strong>
+                    <ul class="CP-Ilist">
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/골드클래스.jpeg" alt="골드클래스">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">CGV 골드클래스</span>
+                                    <span class="PT-name">최고의 관람 환경을 제공하는 프리미엄 상영관</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">40,000원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/영화관람권.jpeg" alt="영화관람권">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">CGV 영화관람권</span>
+                                    <span class="PT-name">즐거운 경험은 CGV에서!</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">13,000원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/4DX관람권.jpeg" alt="4DX관람권">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">4DX 관람권</span>
+                                    <span class="PT-name">오감만족 영화 속 주인공되기</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">19,000원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/IMAX관람권.jpeg" alt="IMAX관람권">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">IMAX 관람권</span>
+                                    <span class="PT-name">사람이 볼 수 있는 최대 영상, IMAX</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">18,000원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/영화관람권-->
+                <!--기프트카드-->
+                <li>
+                    <strong class="CP-title">
+                        기프트카드
+                        <a href="#" class="btn-CP"></a>
+                    </strong>
+                    <ul class="CP-Ilist">
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/PACONNIE A형.jpeg" alt="PACONNIE A형">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">PACONNIE A형</span>
+                                    <span class="PT-name">충전형 선불 카드</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">금액 충전형</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/PACONNIE B형.jpeg" alt="PACONNIE B형">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">PACONNIE B형</span>
+                                    <span class="PT-name">충전형 선불 카드</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">금액 충전형</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/PACONNIE C형.jpeg" alt="PACONNIE C형">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">PACONNIE C형</span>
+                                    <span class="PT-name">충전형 선불 카드</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">금액 충전형</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/기프트카드-->
+                <!--음료-->
+                <li>
+                    <strong class="CP-title">
+                        음료
+                        <a href="#" class="btn-CP"></a>
+                    </strong>
+                    <ul class="CP-Ilist">
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/탄산음료(M).jpeg" alt="탄산음료(M)">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">탄산음료(M)</span>
+                                    <span class="PT-name">시원한 탄산음료와 함께 스트레스도 날리세요!</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">2,500원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/아메리카노(HOT).jpeg" alt="아메리카노(HOT)">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">아메리카노(HOT)</span>
+                                    <span class="PT-name">현대인의 필수품</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">3,500원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/아메리카노(ICE).jpeg" alt="아메리카노(ICE)">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">아메리카노(ICE)</span>
+                                    <span class="PT-name">현대인의 필수품</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">4,000원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/음료-->
+                <!--스낵-->
+                <li>
+                    <strong class="CP-title">
+                        스낵
+                        <a href="#" class="btn-CP"></a>
+                    </strong>
+                    <ul class="CP-Ilist">
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/칠리치즈나쵸.jpeg" alt="칠리치즈나쵸">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">칠리치즈나쵸</span>
+                                    <span class="PT-name">바삭바삭 나쵸, 얼마나 맛있게요?</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">4,900원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/플레인핫도그.jpeg" alt="플레인핫도그">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">플레인핫도그</span>
+                                    <span class="PT-name">플레인핫도그</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">4,500원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-CP">
+                                <span class="product-img-wrap">
+                                    <img src="images/오징어(완제품).jpeg" alt="오징어(완제품)">
+                                </span>
+                                <span class="product-text-wrap">
+                                    <span class="PT-title">오징어(완제품)</span>
+                                    <span class="PT-name">한봉지로는 모자라요</span>
+                                    <span class="product-sale-price-wrap">
+                                        <span class="detail-price">3,500원</span>
+                                        <span class="detail-sale-price"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/스낵-->
+            </ul>
+         </div>
+            
+
+            
+
+
+
+            
+    
+        
+        <!-------------------- /category-menu -------------------->
+        <!-------------------- info-use -------------------->
+        <div class="info-use-wrap">
+            <a href="#" class="btn-info-use">
+                <span class="btn-info-use-title">
+                    CGV 기프트샵 이용안내
+                </span>
+                <span class="btn-info-use-subtitle">
+                    새롭게 리뉴얼한 CGV기프트샵과 함께
+                    <br>
+                    CGV에서 또다른 즐거움을 느껴보세요.
+                </span>
+            </a>
+            <div class="info-use">
+                <strong>CGV 고객센터</strong>
+                <span class="info-use-telnum">
+                    1544-1122
+                </span>
+                <span>상담 가능 시간 : 월 ~ 금 09:00 ~ 18:00</span>
+                <span>*이 외의 시간은 자동 응답 안내 가능*</span>
+            </div>
+        </div>
+        <!-------------------- /info-use -------------------->
+
+        <!----------------------------- FOOTER ----------------------------->
+        <footer>
+            <ul class="policy_list">
+                <li><a href="#" target="_blank">회사소개</a></li>
+                <li><a href="#" target="_blank">지속가능경영</a></li>
+                <li><a href="#" target="_blank">IR</a></li>
+                <li><a href="#" target="_blank">채용정보</a></li>
+                <li><a href="#" target="_blank">광고/제휴/출점문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">편성기준</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">이메일주소무단수집거부</a></li>
+                <li><a href="#" target="_blank">윤리경영</a></li>
+                <li><a href="#" class="empha-red">사이버감사실</a></li>
+            </ul>
+            <article class="company_info_wrap">
+                <section class="company_info">
+                    <address>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</address>
+                    <dl class="company_info_list">
+                        <dt>대표이사</dt>
+                        <dd>허민회</dd>
+                        <dt>사업자등록번호</dt>
+                        <dd>104-81-45690</dd>
+                        <dt>통신판매업신고번호</dt>
+                        <dd>2017-서울용산-0662 사업자정보확인</dd>
+                    </dl>
+                    <dl class="company_info_list">
+                        <dt>호스팅사업자</dt>
+                        <dd>CJ올리브네트웍스</dd>
+                        <dt>개인정보보호 책임자</dt>
+                        <dd>심준범</dd>
+                        <dt>대표이메일</dt>
+                        <dd>cjcgvmaster@cj.net</dd>
+                    </dl>
+                    <p class="copyright">© CJ CGV. All Rights Reserved</p>
+                </section>
+                <section class="familysite-wrap">
+                    <label for="FS">CJ그룹 계열사 바로가기</label>
+                    <select id="FS">
+                        <option value class="FSTiltle">계열사 바로가기</option>
+                        <optgroup label="CJ그룹">
+                            <option value="http://www.cj.net">CJ주식회사</option>
+                        </optgroup>
+                        <optgroup label="식품 & 식품서비스">
+                            <option value="http://www.cj.net">CJ제일제당</option>
+                            <option value="http://www.cj.net">CJ푸드빌</option>
+                            <option value="http://www.cj.net">CJ프레시웨이</option>
+                        </optgroup>
+                        <optgroup label="생명공학">
+                            <option value="http://www.cj.net">CJ제일제당 BIO산업부문</option>
+                            <option value="http://www.cj.net">CJ Feed & Card</option>
+                        </optgroup>
+                        <optgroup label="물류 & 신유통">
+                            <option value="http://www.cj.net">CJ대한통운</option>
+                            <option value="http://www.cj.net">CJ대한통운 건설부문</option>
+                            <option value="http://www.cj.net">CJ올리브영</option>
+                            <option value="http://www.cj.net">CJ올리브네트웍스</option>
+                            <option value="http://www.cj.net">CJ ENM 커머스 부문</option>
+                        </optgroup>
+                        <optgroup label="엔터테인먼트 & 미디어">
+                            <option value="http://www.cj.net">CJ ENM 엔터테인먼트 부문</option>
+                            <option value="http://www.cj.net">CJ CGV</option>
+                        </optgroup>
+                    </select>
+                    <a href="#none" class="btn-FS" onclick="goFamilySite()">GO</a>
+                </section>
+            </article>
+        </footer>
+        <!----------------------------- /FOOTER ----------------------------->
+        <!-------------------- fixed-btn -------------------->
+        <div class="fixed-btn-wrap topBtn">
+            <a href="#" class="btn-fixedTicketing">예매하기</a>
+            <a href="#" class="btn-gototop">
+                <img src="images/gotoTop.png" alt="최상단으로 이동">
+            </a>
+        </div>
+        <!-------------------- /fixed-btn -------------------->
+    
+        
+    </div>
+    
+</body>
+</html>
