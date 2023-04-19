@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
 @import url(reset.css);
@@ -329,7 +330,6 @@ h1 {
     color: #fff;
 }
 /*********************************Main END (GYUJIN)**************************************/
-
 /****************************** FOOTER (GYUJIN)******************************************/
 footer {
     min-width: 1040px;
@@ -380,3 +380,291 @@ footer .company_info_wrap {
 }
 
 /****************************** FOOTER END (GYUJIN)****************************************/
+/* Ticketing (jeayoon) */
+.container{
+    margin: 0 auto;
+}
+.menu{
+    width: 996px;
+    height: 74px;
+}
+.menu a{
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: ivory;
+    position: relative;
+    top: 30px;
+    left: 930px;
+    font-weight: bold;
+}
+.menu i{
+    padding-right: 5px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.fa-solid{
+    position: relative;
+    margin-left: 6px;
+    bottom: 1px;
+}
+/* 영화 */
+.row{
+    height: 565px;
+    margin: 0 auto;
+    width: 986px;
+    display: flex;
+    background-color: ivory;
+}
+.movietitle,
+.theatertitle,
+.datetitle,
+.hourtitle{
+    font-size: 17px;
+    height: 33px;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+}
+.movie{
+    width: 284px;
+    border-left: 2px solid gray;
+}
+.tabmenu a{
+    position: relative;
+    top: 20px;
+    font-size: 12px;
+    margin: 0;
+}
+.moviesort{
+    position: relative;
+    margin: 0 auto;
+    width: 244px;
+    height: 32px;
+    top: 30px;
+}
+.chart{
+    position: relative;
+    width: 244px;
+    height: 32px;
+    border-bottom: 2px solid gray
+}
+.chart a{
+    position: relative;
+    top: 6px;
+}
+.moviesort li a{
+    position: relative;
+    font-size: 12px;
+    margin-left: 5px;
+    top: 3px;
+    color: gray;
+    font-weight: 300;
+}
+nav::-webkit-scrollbar {
+    width: 7px;
+}
+nav::-webkit-scrollbar-thumb {
+    height: 10%;
+    background: gray;
+    border-radius: 10px;
+}
+nav{
+    position: relative;
+    top: 0px;
+    height: 440px;
+    overflow-y: scroll;
+    white-space:nowrap;
+    overflow-x: hidden;
+    margin: 0 -7px;
+}
+.moviechart li{
+    padding: 10px 0;
+}
+.moviechart li a{
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+}
+.menu1
+,.theatermenu1{
+    text-align: center;
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+    border-top: 2px solid #333;
+    padding: 5px 15px;
+}
+.menu2
+,.theatermenu2{
+    text-align: center;
+    border-top: 2px solid gray;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid #333;
+    padding: 5px 10px;
+    width: 90px;
+
+}
+.menu3
+,.theatermenu3{
+    text-align: center;
+    border-top: 2px solid gray;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid #333;
+    padding: 5px 20px;
+    width: 88px;
+}
+.menugnb{
+    position: relative;
+    display: flex;
+    left: 15px;
+}
+ul.menugnb li a:hover {
+    background: #333;
+    color: white;
+  }
+.menulnb{
+    position: absolute;
+    width: 90px;
+    top: 42px;
+    background: #333;
+    white-space:nowrap;
+    display: none;
+    z-index: 100;
+    white-space:nowrap;
+    overflow-x: hidden;
+}
+.menulnb li,
+.menulnb2 li{
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+.menulnb:last-child,
+.menulnb2:last-child
+{
+    padding-bottom: 5px;
+}
+.menulnb a,
+.menulnb2 a{
+    position: relative;
+    color: white;
+    padding: 0;
+    top: 0;
+    padding-left: 5px;
+}
+.menulnb a:hover,
+.menulnb2 a:hover{
+    text-decoration: underline;
+}
+.menulnb2{
+    position: absolute;
+    width: 88px;
+    top: 42px;
+    z-index: 100;
+    background: #333;
+    white-space:nowrap;
+    display: none;
+}
+/* 극장 */
+.theater{
+    width: 265px;
+    border-left: 2px solid gray;
+}
+.menugnb2{
+    position: relative;
+    display: flex;
+    left: 30px;
+}
+.theatermenu{
+    text-align: center;
+}
+.theatermenu1,
+.theatermenu2,
+.theatermenu3{
+    position: relative;
+    top: 20px;
+    font-size: 12px;
+    margin: 0;
+    right: 10px;
+}
+.theatermenu1{
+    padding:5px 15px;
+}
+.theatermenu2{
+    padding:5px 20px;
+}
+.theatermenu3{
+    padding:5px 20px;
+}
+.allgnb{
+    position: absolute;
+    top: 45px;
+    left: -10px;
+}
+.region{
+    padding: 8px 0;
+    padding-left: 5px;
+    text-align: right;
+    background: rgb(231, 231, 212);
+    border-bottom: 1px solid ivory;
+    font-size: 12px;
+}
+.seoulregion{
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    left: 105px;
+    width: 124px;
+    height: 480px;
+    overflow-y: scroll;
+    white-space:nowrap;
+    overflow-x: hidden;
+}
+.seoulregion ul li{
+    padding: 8px 0;
+    padding-left: 5px;
+}
+.seoulregion ul li a{
+    font-weight: bold;
+}
+.seoulregion::-webkit-scrollbar {
+    width: 7px;
+}
+.seoulregion::-webkit-scrollbar-thumb {
+    height: 5px;
+    background: gray;
+    border-radius: 10px;
+}
+/* 날짜 */
+.date{
+    width: 91px;
+    border-left: 2px solid gray;
+}
+/* 시간 */
+.hour{
+    width: 346px;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+.houricon{
+    position: relative;
+    width: 306px;
+    height: 24px;
+    display: flex;
+    border-bottom: 2px solid gray;
+    top: 25px;
+    left: 15px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.morning,
+.night{
+    color: #333;
+}
+.fa-sun{
+    color: orangered;
+}
+.fa-moon{
+    color: rgb(61, 61, 212);
+}
+/* Ticketing End (jeayoon) */
