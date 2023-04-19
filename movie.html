@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV 영화</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="cgvwrap">
+        <div class="header">
+            <div class="header_content">
+                <div class="contents">
+                <h1 onclick>
+                    <a href="#">
+                        <img src="images/logoRed.png" alt="CGV">
+                    </a>
+                    <span>CULTUREPLEX</span>
+                </h1>
+                <ul class="memberInfo_wrap">
+                    <div class="ad-parter">
+                        <a href="#">
+                            <img src="images/16758461047540.png" alt="현대">
+                        </a>
+                    </div>
+                    <li><a href="#"><img src="images/loginPassword.png" alt="로그인">
+                        <span>로그인</span>
+                    </a></li>
+                    <li><a href="#"><img src="images/loginJoin.png" alt="회원가입">
+                        <span>회원가입</span>
+                    </a></li>
+                    <li><a href="#"><img src="images/loginMember.png" alt="MY CGV">
+                        <span>MY CGV</span>
+                    </a></li>
+                    <li><a href="#"><img src="images/loginCustomer.png" alt="고객센터">
+                        <span>고객센터</span>
+                    </a></li>
+                </ul>
+            </div>
+            </div>
+            <div class ="nav">
+                <div class="contents">
+                        <ul class="nav_menu">
+                            <li>
+                                <h2><a href="#">영화</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">영화</a></h2></dt>
+                                    <dd><a href="#">무비차트</a></dd>
+                                    <dd><a href="#">아트하우스</a></dd>
+                                    <dd><a href="#">icecon</a></dd>
+                                </dl>
+                            </li> 
+                            <li>
+                                <h2><a href="#">극장</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">극장</a></h2></dt>
+                                    <dd><a href="#">cgv 극장</a></dd>
+                                    <dd><a href="#">특별관</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <h2><a href="#"><strong>예매</strong></a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">예매</a></h2></dt>
+                                    <dd><a href="#">빠른 예매</a></dd>
+                                    <dd><a href="#">상영스케줄</a></dd>
+                                    <dd><a href="#">English Ticketing</a></dd>
+                                    <dd><a href="#">English Schedule</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <h2><a href="#">스토어</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">스토어</a></h2></dt>
+                                    <dd><a href="#">패키지</a></dd>
+                                    <dd><a href="#">영화관람권</a></dd>
+                                    <dd><a href="#">기프트카드</a></dd>
+                                    <dd><a href="#">콤보</a></dd>
+                                    <dd><a href="#">팝콘</a></dd>
+                                    <dd><a href="#">음료</a></dd>
+                                    <dd><a href="#">스낵</a></dd>
+                                    <dd><a href="#">플레이존</a></dd>
+                                    <dd><a href="#">씨네샵 ></a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <h2><a href="#">이벤트</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">이벤트</a></h2></dt>
+                                    <dd><a href="#">SPECIAL</a></dd>
+                                    <dd><a href="#">영화/예매</a></dd>
+                                    <dd><a href="#">멤버십/club</a></dd>
+                                    <dd><a href="#">CGV 극장별</a></dd>
+                                    <dd><a href="#">제휴할인</a></dd>
+                                    <dd><a href="#">당첨자 발표</a></dd>
+                                    <dd><a href="#">종료된 이벤트</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <h2><a href="#">혜택</a></h2>
+                                <dl class="nav_overMenu">
+                                    <dt><h2><a href="#">혜택</a></h2></dt>
+                                    <dd><a href="#">CGV 할인정보</a></dd>
+                                    <dd><a href="#">CLUB 서비스</a></dd>
+                                    <dd><a href="#">VIP 라운지</a></dd>
+                                </dl>
+                            </li>
+                        </ul> 
+                        <div class="totalSearch_wrap">
+                            <label for="totalSearch">
+                                <input type="text" id="header_keyword" value="" placeholder="뱅기짱의 가출 모험">
+                                <input type="hidden" id="header_ad_keyword" name="header_ad_keyword" value="뱅기짱의 가출 모험">
+                            </label>
+                            <button type="button" class="btn_totalSearch" id="btn_header_search"><span class="material-symbols-outlined">
+                                search
+                                </span></button>
+                            
+                        </div>               
+                </div>
+            </nav>
+        </div>
+    </div>
+<!-- 무비차트 -->
+    <div class="container">
+        <div class="heading">
+            <h3>무비차트</h3>
+            <div class="submenu">
+                <ul class="on">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i>무비차트</a>
+                    </li>
+                    <li>
+                        <a href="#">상영예정작</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="sect-sorting">
+            <div class="nowshow">
+                <input type="checkbox" class="nowshow-ck">
+                <label for="chk_nowshow">현재 상영작만 보기</label>
+            </div>
+            <div class="family">
+                <select>
+                    <option value="1">예매율순</option>
+                    <!-- <option value="#">예매율순</option> -->
+                    <option value="#">평점순</option>
+                    <option value="#">관람객순</option>
+                </select>
+                <button type="button" class="btn-go">
+                    <span>GO</span>
+                </button>
+            </div>
+        </div>
+            <div class="movie-chart">
+                <ol>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number1">NO.1</strong>
+                            <a href="#">
+                                <img src="images/영화/슬램덩크.jpg" alt="01"/>
+                                <!-- <a class="imax" href="#" title="IMAX 상세정보 바로가기" data-regioncode="07">IMAX</a> -->
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="cgv_imax">
+                                <a href="#">IMAX</a>
+                            </div>
+                            <div class="chart-body">
+                                         <a href="#"><h1>더 퍼스트 슬램덩크</h1></a>
+                                        <p class="percent">예매율 <span>30.8%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>97%</span></p>
+
+                                        <p class="last-percent">2023.01.04. 개봉</p>
+                            </div>
+                        <div class="like">
+                            <a href="#">예매하기</a>
+                        </div>    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number1">NO.2</strong>
+                            <a href="#">
+                                <img src="images/영화/존윅4.jpg" alt="02"/>
+                            </a>
+                            <i class="icon_age18"><img src="images/영화/age18.svg" alt="age18"></i>
+                            <div class="cgv_imax-4dx">
+                                <a href="#">IMAX</a>
+                                <a href="#">4DX</a>
+                            </div>
+                            <div class="chart-body">
+                                        <a href="#"><h1>존 윅 4</h1></a>
+
+                                        <p class="percent">예매율 <span>11.1%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.04.14. 개봉<span>D-9</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number1">NO.3</strong>
+                            <a href="#">
+                                <img src="images/영화/리바운드.jpg" alt="03"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>리바운드</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>8.9%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.04.05. 개봉<span>D-2</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chart-ad">
+                            <div class="box-com">
+                                <a href="#">
+                                    <img src="images/영화/광고1.png" alt="광고1">
+                                </a>     
+                            </div>
+                            <div class="chart_ad_desc">
+                                <dl>
+                                    <dt>
+                                        <img src="images/영화/AD아이콘.png" alt="ad">
+                                        <span>EZEN X Bugs</span>
+                                    </dt>
+                                    <dd>
+                                        <span class="last_ad_desc">MUSIC & Movie 감성 페어링</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.4</strong>
+                            <a href="#">
+                                <img src="images/영화/스즈메.jpg" alt="04"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>스즈메의 문단속</h1></a>
+
+                                        <p class="percent">예매율 <span>8.6%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>94%</span></p>
+
+                                        <p class="last-percent">2023.03.08. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.5</strong>
+                            <a href="#">
+                                <img src="images/영화/에어.jpg" alt="05"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>에어</h1></a>
+
+                                        <p class="percent">예매율 <span>6.8%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.04.05. 개봉<span>D-2</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.6</strong>
+                            <a href="#">
+                                <img src="images/영화/던전앤드래곤.jpg" alt="06"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="cgv_screenx">
+                                <a href="#">SCREENX</a>
+                            </div>
+                            <div class="chart-body">
+                                        <a href="#"><h1>던전 앤 드래곤-도적들의 명예</h1></a>
+
+                                        <p class="percent">예매율 <span>3.5%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>94%</span></p>
+
+                                        <p class="last-percent">2023.03.29. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.7</strong>
+                            <a href="#">
+                                <img src="images/영화/롤.jpg" alt="07"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>2023 LCK 스프링 결승</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>1.9%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.09. 개봉<span>D-6</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <div class="box-banner">
+                    <a href="#">
+                        <img src="images/영화/광고2.jpg" alt="광고2">
+                    </a>
+                </div>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.8</strong>
+                            <a href="#">
+                                <img src="images/영화/카구야.jpg" alt="08"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>카구야 님은 고백받고 싶어</h1></a>                                     
+
+                                        <p class="percent">예매율 <span>1.6%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.04.06. 개봉<span>D-3</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.9</strong>
+                            <a href="#">
+                                <img src="images/영화/임영웅.jpg" alt="09"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="cgv_screenx">
+                                <a href="#">SCREENX</a>
+                            </div>
+                            <div class="chart-body">                                
+                                        <a href="#"><h1>아임 히어로 더 파이널</h1></a> 
+
+                                        <p class="percent">예매율 <span>1.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>98%</span></p>
+
+                                        <p class="last-percent">2023.03.01. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.10</strong>
+                            <a href="#">
+                                <img src="images/영화/파벨만스.jpg" alt="10"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>파벨만스</h1></a>                                     
+
+                                        <p class="percent">예매율 <span>0.6%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>96%</span></p>
+
+                                        <p class="last-percent">2023.03.22. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.11</strong>
+                            <a href="#">
+                                <img src="images/영화/슬램덩크.jpg" alt="11"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>10-FEET-라이브 이벤트</h1></a>
+
+                                        <p class="percent">예매율 <span>0.5%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.04.05. 개봉<span>D-2</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.12</strong>
+                            <a href="#">
+                                <img src="images/영화/찬란한 나의 복수.jpg" alt="12"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>찬란한 나의 복수</h1></a>
+
+                                        <p class="percent">예매율 <span>0.4%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>78%</span></p>
+
+                                        <p class="last-percent">2023.03.29. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.13</strong>
+                            <a href="#">
+                                <img src="images/영화/오토라는남자.jpg" alt="13"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>오토라는 남자</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.4%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.03.29. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.14</strong>
+                            <a href="#">
+                                <img src="images/영화/엘카미노.jpg" alt="14"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>엘 카미노</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.4%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>93%</span></p>
+
+                                        <p class="last-percent">2023.03.29. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.15</strong>
+                            <a href="#">
+                                <img src="images/영화/흐르다.jpg" alt="15"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>흐르다</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>0.4%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>86%</span></p>
+
+                                        <p class="last-percent">2023.03.29. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.16</strong>
+                            <a href="#">
+                                <img src="images/영화/상견니.jpg" alt="16"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>상견니</h1></a>
+
+                                        <p class="percent">예매율 <span>0.4%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>82%</span></p>
+
+                                        <p class="last-percent">2023.01.15. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.17</strong>
+                            <a href="#">
+                                <img src="images/영화/웅남이.jpg" alt="17"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>웅남이</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.3%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>74%</span></p>
+
+                                        <p class="last-percent">2023.03.22. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.18</strong>
+                            <a href="#">
+                                <img src="images/영화/소울메이트.jpg" alt="18"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>소울메이트</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.2%</span>ㅣ<span class="bangpregg bangdefault"></span> span>95%</span></p>
+
+                                        <p class="last-percent">2023.03.15. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                        <strong class="number">NO.19</strong>
+                            <a href="#">
+                                <img src="images/영화/귀멸의칼날.jpg" alt="19"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>귀멸의 칼날-상현집합</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>0.2%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>81%</span></p>
+
+                                        <p class="last-percent">2023.03.02. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+
+            <div class="plusmovie_chart">
+                <ol>
+                    <li>
+                        <div class="box-img">
+                                <a href="#">
+                                    <img src="images/영화/파벨만스.jpg" alt="20"/>
+                                </a>
+                                <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                                <div class="chart-body">
+                                            <a href="#"><h1>파벨만스</h1></a>                                     
+    
+                                            <p class="percent">예매율 <span>0.4%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>96%</span></p>
+    
+                                            <p class="last-percent">2023.03.22. 개봉</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#">예매하기</a>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/메탈리카.jpg" alt="21"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>메탈리카: 72 시즌스</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.3%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.13. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/웅남이.jpg" alt="22"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>웅남이</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.2%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>74%</span></p>
+
+                                        <p class="last-percent">2023.03.22. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/라스트 필름 쇼.jpg" alt="23"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>라스트 필름쇼</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>0.2%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.04.12. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/밥만 잘 사주는 이상한 이사.jpg" alt="24"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>밥만 잘 사주는 이상한 이사님 극장판</h1></a>
+
+                                        <p class="percent">예매율 <span>0.2%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.12. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/물안에서.jpg" alt="25"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>물안에서</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.2%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>85%</span></p>
+
+                                        <p class="last-percent">2023.04.12. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/사랑의 고고학.jpg" alt="26"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>사랑의 고고학</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.2%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.12. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/제비.jpg" alt="27"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>제비</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>0.1%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>96%</span></p>
+
+                                        <p class="last-percent">2023.04.12. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/65.jpg" alt="28"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>65</h1></a>
+
+                                        <p class="percent">예매율 <span>0.1%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.04.20. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/엘 카미노.jpg" alt="29"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>엘 카미노</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.1%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>91%</span></p>
+
+                                        <p class="last-percent">2023.03.29. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/빈 필하모닉 정기연주회.jpg" alt="30"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>빈 필하모닉 정기연주회 - 주빈 메타 & 마르타 아르헤리치</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.1%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.19. 개봉<span>D-6</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/장기자랑.jpg" alt="31"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>장기자랑</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>0.1%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.04.05. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/오토라는남자.jpg" alt="32"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>오토라는 남자</h1></a>
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>99%</span></p>
+
+                                        <p class="last-percent">2023.03.29 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/아바타-물의 길.jpg" alt="33"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>아바타-물의 길</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>96%</span></p>
+
+                                        <p class="last-percent">2022.12.14. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/시대에는 예술.jpg" alt="34"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>[아트&다이닝]시대에는 예술을, 예술에는 자유를-빈 Wien</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.16. 개봉<span>D-3</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/오글리스.jpg" alt="35"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>오글리스-웰컴 투 냄새 마을</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>89%</span></p>
+
+                                        <p class="last-percent">2023.04.06. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/브랜드 레.jpg" alt="36"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>[인사이터XCGV]브랜드 레쥬메 작성법</h1></a>
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.28. 개봉<span>D-15</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/더 블랙.jpg" alt="37"/>
+                            </a>
+                            <i class="icon_age18"><img src="images/영화/age18.svg" alt="age18"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>[콘서트&비어]더 블랙</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.23. 개봉<span>D-10</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/곰돌이 푸.jpg" alt="38"/>
+                            </a>
+                            <i class="icon_age18"><img src="images/영화/age18.svg" alt="age18"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>곰돌이 푸-피와 꿀</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>40%</span></p>
+
+                                        <p class="last-percent">2023.04.06. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/불멸의 여자.jpg" alt="39"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>불멸의 여자</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>96%</span></p>
+
+                                        <p class="last-percent">2023.04.05. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/오늘 출가합니다.jpg" alt="40"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>오늘 출가합니다</h1></a>
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>97%</span></p>
+
+                                        <p class="last-percent">2023.04.05. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/멍뭉이.jpg" alt="41"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>멍뭉이</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>89%</span></p>
+
+                                        <p class="last-percent">2023.03.01. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/영웅.jpg" alt="42"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>영웅</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>94%</span></p>
+
+                                        <p class="last-percent">2022.12.21. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/더 크래시.jpg" alt="43"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>[사이다경제]더크래시-부동산 하락'그 다음' 우리가 해야 할 일은 무엇인가?</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.25. 개봉<span>D-12</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/빈 필하모닉 정기연주회.jpg" alt="44"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>[커피클래식]빈 필하모닉 정기연주회-주빈 메타 & 마르타 아르헤리치</h1></a>
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.19. 개봉<span>D-6</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/에어비앤비.jpg" alt="45"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>[사이다경제]에어비앤비로 제2의 연봉 만들기</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.18. 개봉<span>D-5</span></p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/치치핑핑의 쿵쿵따.jpg" alt="46"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>치치핑핑의 쿵쿵따 탐험대</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>?</span></p>
+
+                                        <p class="last-percent">2023.04.10. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/여섯 개의 밤.jpg" alt="47"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>여섯개의 밤</h1></a>
+                                        
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>86%</span></p>
+
+                                        <p class="last-percent">2023.03.29. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/흐르다.jpg" alt="48"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>흐르다</h1></a>
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>87%</span></p>
+
+                                        <p class="last-percent">2023.03.29. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/대외비.jpg" alt="49"/>
+                            </a>
+                            <i class="icon_age15"><img src="images/영화/age15.svg" alt="age15"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>대외비</h1></a>                                       
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>85%</span></p>
+
+                                        <p class="last-percent">2023.03.01. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/탄생.jpg" alt="50"/>
+                            </a>
+                            <i class="icon_age12"><img src="images/영화/age12.svg" alt="age12"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>탄생</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"></span> <span>90%</span></p>
+
+                                        <p class="last-percent">2022.11.30. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-img">
+                            <a href="#">
+                                <img src="images/영화/로보카폴리.jpg" alt="51"/>
+                            </a>
+                            <i class="icon_ageall"><img src="images/영화/ageall.svg" alt="ageall"></i>
+                            <div class="chart-body">
+                                        <a href="#"><h1>로보카폴리 안전교실 교통편</h1></a>                                        
+
+                                        <p class="percent">예매율 <span>0.0%</span>ㅣ<span class="bangpregg bangdefault"> </span> <span>?</span></p>
+
+                                        <p class="last-percent">2022.09.19. 개봉</p>
+                            </div>
+                            <div class="like">
+                                <a href="#">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="btn-box">
+                <button type="button" class="plus-button" onclick="pbtn()">더보기
+                    <i class="fa-regular fa-square-plus"></i>
+                </button>
+            </div>
+                
+            </div>
+            
+    </div>
+    <footer>
+        <div></div>
+        <ul class="policy_list">
+            <li><a href="#" target="_blank">회사소개</a></li>
+            <li><a href="#" target="_blank">지속가능경영</a></li>
+            <li><a href="#" target="_blank">IR</a></li>
+            <li><a href="#" target="_blank">채용정보</a></li>
+            <li><a href="#" target="_blank">광고/제휴/출점문의</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">편성기준</a></li>
+            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="#">법적고지</a></li>
+            <li><a href="#">이메일주소무단수집거부</a></li>
+            <li><a href="#" target="_blank">윤리경영</a></li>
+            <li><a href="#" class="empha-red">사이버감사실</a></li>
+        </ul>
+        <article class="company_info_wrap">
+            <section class="company_info">
+                <address>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</address>
+                <dl class="company_info_list">
+                    <dt>대표이사</dt>
+                    <dd>허민회</dd>
+                    <dt>사업자등록번호</dt>
+                    <dd>104-81-45690</dd>
+                    <dt>통신판매업신고번호</dt>
+                    <dd>2017-서울용산-0662 사업자정보확인</dd>
+                </dl>
+                <dl class="company_info_list">
+                    <dt>호스팅사업자</dt>
+                    <dd>CJ올리브네트웍스</dd>
+                    <dt>개인정보보호 책임자</dt>
+                    <dd>심준범</dd>
+                    <dt>대표이메일</dt>
+                    <dd>cjcgvmaster@cj.net</dd>
+                </dl>
+                <p class="copyright">© CJ CGV. All Rights Reserved</p>
+            </section>
+        </article>
+    </footer>
+            <!-- scrollUp -->
+            <div class="pull-box">
+                <div class="scroll-box" id="scroll-box" >
+                    <a href="#" class="reserv animate__backInRight aniUtil_active" id="reserv">예매하기</a>
+                    <div id="scrollUp" onclick="scrollUp()">
+                         <i class="fa-solid fa-up-long"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- scrollUp -->
+    
+</body>
+</html>
