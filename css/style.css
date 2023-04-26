@@ -407,7 +407,9 @@ h3 a {
     overflow: hidden;
     list-style: none;
     padding: 0;
-    z-index: 1;
+    z-index: 1; 
+}
+.movieslide{
     transition: all 0.5s;
 }
 .swiper-wrapper {
@@ -433,7 +435,7 @@ h3 a {
     height: 234px;
     border-radius: 10px;
 }
-.img_wrap:before {
+.img_wrap_main:before {
     content: '';
     display: block;
     position: absolute;
@@ -678,7 +680,93 @@ i.cgvIcon.etc.ageDay:before {
     width: 10px;
     height: 14px;
  }
-/*********************************Main END (GYUJIN)**************************************/
+/******************************Main END (GYUJIN)**************************************/
+
+/****************************** EVENT (GYUJIN) ****************************************/
+.event_wrap {
+    padding: 60px 0 6px;
+}
+.event_title_wrap {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.event_title_wrap h3 {
+    float: left;
+    height: auto;
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    color: #222;
+    line-height: 1.423em;
+    background-image: none;
+}
+h3 {
+    height: 41px;
+    margin: 30px 0 15px;
+    line-height: 41px;
+    text-align: center;
+    font-weight: 500;
+}
+.event_title_wrap .btn_allView {
+    float: right;
+    margin-top: 4px;
+    padding: 4px 32px 4px 15px;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+    background: transparent url(../images/arrowR_8x13.png) calc(100% - 7px) center/8px 13px scroll no-repeat;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+.btn_eventControl {
+    display: block;
+    position: absolute;
+    right: 106px;
+    top: 4px;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    background: transparent url(../images/play.png) 10px center/11px 15px scroll no-repeat;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+}
+.event_title_wrap:after {
+    content: '';
+    clear: both;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+.event_list_wrap {
+    position: relative;
+    width: 100%;
+    margin-top: 19px;
+    margin-left: -30px;
+    padding: 0 30px;
+}
+.event_list {
+    overflow: visible;
+    position: relative;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+.swiper-slide a {
+    display: block;
+}
+.event_list .swiper-wrapper .swiper-slide a .img_wrap {
+    width: 310px;
+    height: 207px;
+    border-radius: 10px;
+}
+/**************************** EVENT END (GYUJIN) ****************************************/
+
 /****************************** FOOTER (GYUJIN)******************************************/
 footer {
     min-width: 1040px;
