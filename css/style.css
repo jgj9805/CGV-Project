@@ -1001,19 +1001,78 @@ ul.menugnb li a:hover {
     height: 24px;
     display: flex;
     border-bottom: 2px solid gray;
-    top: 25px;
-    left: 15px;
+    top: 8px;
+    margin-left: 20px;
+    margin-top: 19px;
     font-size: 12px;
     letter-spacing: 3px;
 }
+.morning{
+    padding-right: 10px;
+}
 .morning,
 .night{
+    font-size: 13px;
     color: #333;
 }
 .fa-sun{
-    color: orangered;
+    color: rgb(211, 87, 43);
 }
 .fa-moon{
-    color: rgb(61, 61, 212);
+    color: rgb(71, 71, 165);
+}
+.hourtextbox{
+    height: 426px;
+}
+.hourtext{
+    position: relative;
+    top: 200px;
+    color: #555;
+    font-size: 13px;
+    font-weight: 300;
+}
+.ticket-container{
+    display: flex;
+    height: 128px;
+    background-color: #222;
+    text-align: center;
+}
+.movie-selection{
+    position: relative;
+    width: 212px;
+    height: 108px;
+    top: 10px;
+    left: 1px;
+}
+.movie-selection h1{
+    position: relative;
+    top: 15px;
+}
+.theater-selection{
+    position: relative;
+    width: 187px;
+    height: 108px;
+    top: 10px;
+    left: 1px;
+}
+.theater-selection h1{
+    position: relative;
+    top: 15px;
+}
+.payment{
+    display: flex;
+    position: relative;
+    
+    height: 80px;
+    top: 20px;
+    left: 1px;
+}
+.payment h1{
+    position: relative;
+    top: 5px;
+}
+.fa-chevron-right{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 /* Ticketing End (jeayoon) */
