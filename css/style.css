@@ -822,18 +822,19 @@ footer .company_info_wrap {
     margin: 0 auto;
 }
 .menu{
+    margin: 0 auto;
     width: 996px;
     height: 74px;
+    text-align: right;
 }
 .menu a{
+    position: relative;
     border: 1px solid #333;
     border-radius: 5px;
     padding: 5px 10px;
     background-color: ivory;
-    position: relative;
-    top: 30px;
-    left: 930px;
     font-weight: bold;
+    top: 30px;
 }
 .menu i{
     padding-right: 5px;
@@ -847,9 +848,9 @@ footer .company_info_wrap {
 }
 /* 영화 */
 .row{
-    height: 565px;
+    height: 600px;
     margin: 0 auto;
-    width: 986px;
+    width: 996px;
     display: flex;
     background-color: ivory;
 }
@@ -910,7 +911,7 @@ nav::-webkit-scrollbar-thumb {
 nav{
     position: relative;
     top: 0px;
-    height: 440px;
+    height: 460px;
     overflow-y: scroll;
     white-space:nowrap;
     overflow-x: hidden;
@@ -1052,7 +1053,7 @@ ul.menugnb li a:hover {
     top: 0px;
     left: 105px;
     width: 124px;
-    height: 480px;
+    height: 513px;
     overflow-y: scroll;
     white-space:nowrap;
     overflow-x: hidden;
@@ -1077,9 +1078,59 @@ ul.menugnb li a:hover {
     width: 91px;
     border-left: 2px solid gray;
 }
+.datebox{
+    text-align: center;
+}
+.datenav::-webkit-scrollbar {
+    width: 7px;
+}
+.datenav::-webkit-scrollbar-thumb {
+    height: 5px;
+    background: gray;
+    border-radius: 10px;
+}
+.datenav{
+    height: 534px;
+    position: relative;
+    top: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+}
+.calendar{
+    padding-top: 10px;
+}
+.calendar h1{
+    margin-top: 0;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.calendar span{
+    font-size: 12px;
+}
+.calendardate li{
+    display: block;
+}
+.calendardate li a{
+    display: flex;
+    padding:  8px;
+}
+.calendardate h3{
+    font-size: 16px;
+    font-weight: 800;
+    position: relative;
+    left: 30px;
+}
+.calendardate li span{
+    position: relative;
+    left: 20px;
+    top: 3px;
+    font-size: 13px;
+    font-weight: 300;
+}
 /* 시간 */
 .hour{
-    width: 346px;
+    width: 356px;
     border-left: 2px solid gray;
     border-right: 2px solid gray;
 }
@@ -1120,47 +1171,102 @@ ul.menugnb li a:hover {
     font-weight: 300;
 }
 .ticket-container{
-    display: flex;
     height: 128px;
     background-color: #222;
+}
+.ticket-row{
+    margin: 0 auto;
+    width: 996px;
     text-align: center;
+    align-items: center;
+    display: flex;
 }
 .movie-selection{
     position: relative;
     width: 212px;
     height: 108px;
     top: 10px;
-    left: 1px;
 }
 .movie-selection h1{
     position: relative;
     top: 15px;
+    border-right: 1px solid #555;
+    margin: 0;
+    padding: 20px 0;
 }
 .theater-selection{
     position: relative;
-    width: 187px;
+    width: 212px;
     height: 108px;
     top: 10px;
-    left: 1px;
 }
 .theater-selection h1{
     position: relative;
     top: 15px;
+    border-right: 1px solid #555;
+    margin: 0;
+    padding: 20px 0;
 }
 .payment{
     display: flex;
-    position: relative;
-    
     height: 80px;
-    top: 20px;
-    left: 1px;
 }
 .payment h1{
     position: relative;
-    top: 5px;
+    top: 15px;
 }
 .fa-chevron-right{
     padding-left: 10px;
     padding-right: 10px;
+}
+.banner{
+    height: 200px;
+}
+.Ticketingimg{
+    text-align: center;
+    margin: 30px 0;
+}
+.seat-selection{
+    position: relative;
+    top: 10px;
+    width: 106px;
+    height: 108px;
+    border: 2px solid #777;
+    border-radius: 15px;
+    background-color: #3b3b3b;
+    text-align: center;
+    color: #ddd;
+    left: 240px;
+}
+.seat-selection h1{
+    position: relative;
+    font-size: 20px;
+    top: 10px;
+}
+.seat-selection i{
+    position: relative;
+    font-size: 45px;
+    top: 20px;
+}
+#scrollUp{
+    position: relative;
+    left: 1250px;
+    bottom: 100px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    width:50px;
+    height:50px;
+    padding-top: 13px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #333333;
+    border-radius: 25px;
+}
+#scrollUp>i{
+    position: relative;
+    font-size:20px;
+    color:#333333;
+    right: 3px;
 }
 /* Ticketing End (jeayoon) */
