@@ -399,6 +399,7 @@ h3 a {
     overflow: visible;
     position: relative;
 }
+
 .swiper {
     margin-left: auto;
     margin-right: auto;
@@ -406,7 +407,10 @@ h3 a {
     overflow: hidden;
     list-style: none;
     padding: 0;
-    z-index: 1;
+    z-index: 1; 
+}
+.movieslide{
+    transition: all 0.5s;
 }
 .swiper-wrapper {
     counter-reset: movie-chart-counter;
@@ -415,7 +419,6 @@ h3 a {
     height: 100%;
     z-index: 1;
     display: flex;
-    transition-property: transform;
     box-sizing: content-box;
 }
 .swiper-slide {
@@ -423,8 +426,8 @@ h3 a {
     width: 100%;
     height: 100%;
     position: relative;
-    transition-property: transform;
 }
+
 .img_wrap {
     overflow: hidden;
     position: relative;
@@ -432,7 +435,7 @@ h3 a {
     height: 234px;
     border-radius: 10px;
 }
-.img_wrap:before {
+.img_wrap_main:before {
     content: '';
     display: block;
     position: absolute;
@@ -454,6 +457,18 @@ h3 a {
     height: 100%;
     object-fit: cover;
     transform: translate(0, -50%);
+}
+.shadowbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    
+}
+.shadowbox:hover{
+    background: rgba(0, 0, 0, 0.5);
 }
 .movieAgeLimit_wrap {
     display: flex;
@@ -505,9 +520,42 @@ i.cgvIcon {
     margin-top: 2px;
 }
 .movieChart_btn_wrap {
+    position: absolute;
     display: none;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
 }
-.img_wrap:after {
+a.btn_movieChart_detail {
+    color: #666;
+    background-color: #fff;
+    top: 80px;
+    left: 27px;
+}
+a.btn_movieChart_ticketing {
+    color: #fff;
+    background-color: #fb4357;
+    top: 115px;
+    left: 27px;
+}
+.movieChart_btn_wrap a:hover {
+    opacity: 0.8;
+}
+.movieChart_btn_wrap a ~ a {
+    margin-top: 6px;
+}
+.img_wrap:hover .movieChart_btn_wrap a {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 34px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.462em;
+    border-radius: 4px;
+}
+.img_num::after {
     content: counter(movie-chart-counter);
     counter-increment: movie-chart-counter;
     position: absolute;
@@ -520,6 +568,9 @@ i.cgvIcon {
     line-height: 1em;
     z-index: 3;
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.45);
+}
+.img_num:hover::after {
+    content: ""; /* hover 시 숫자가 사라지도록 content를 빈 문자열로 설정 */
 }
 .movie_info_wrap {
     display: flex;
@@ -589,7 +640,7 @@ i.cgvIcon.etc.ageDay:before {
     position: relative;
     width: 1100px;
     margin: 0 auto;
-}
+} 
 .swiper-button-next {
     display: flex;
     justify-content: center;
@@ -606,11 +657,116 @@ i.cgvIcon.etc.ageDay:before {
     transform: rotate(-180deg);
     z-index: 50;
 }
+.swiper-button-prev {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px 0 rgba(7, 7, 7, 0.8);
+    background: rgba(216, 213, 213, 0.8);
+    left: 40px;
+    top: 210px;
+    z-index: 50;
+}
 .swiper-button-next img{
    width: 10px;
    height: 14px;
 }
-/*********************************Main END (GYUJIN)**************************************/
+.swiper-button-prev img{
+    width: 10px;
+    height: 14px;
+ }
+/******************************Main END (GYUJIN)**************************************/
+
+/****************************** EVENT (GYUJIN) ****************************************/
+.event_wrap {
+    padding: 60px 0 6px;
+}
+.event_title_wrap {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.event_title_wrap h3 {
+    float: left;
+    height: auto;
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    color: #222;
+    line-height: 1.423em;
+    background-image: none;
+}
+h3 {
+    height: 41px;
+    margin: 30px 0 15px;
+    line-height: 41px;
+    text-align: center;
+    font-weight: 500;
+}
+.event_title_wrap .btn_allView {
+    float: right;
+    margin-top: 4px;
+    padding: 4px 32px 4px 15px;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+    background: transparent url(../images/arrowR_8x13.png) calc(100% - 7px) center/8px 13px scroll no-repeat;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+.btn_eventControl {
+    display: block;
+    position: absolute;
+    right: 106px;
+    top: 4px;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    background: transparent url(../images/play.png) 10px center/11px 15px scroll no-repeat;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+}
+.event_title_wrap:after {
+    content: '';
+    clear: both;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+.event_list_wrap {
+    position: relative;
+    width: 100%;
+    margin-top: 19px;
+    margin-left: -30px;
+    padding: 0 30px;
+}
+.event_list {
+    overflow: visible;
+    position: relative;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+.swiper-slide a {
+    display: block;
+}
+.event_list .swiper-wrapper .swiper-slide a .img_wrap {
+    width: 310px;
+    height: 207px;
+    border-radius: 10px;
+}
+/**************************** EVENT END (GYUJIN) ****************************************/
+
 /****************************** FOOTER (GYUJIN)******************************************/
 footer {
     min-width: 1040px;
