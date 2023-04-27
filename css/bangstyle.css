@@ -1026,6 +1026,109 @@ a{
     font-weight: bold;
     color: #222;
 }
+/****************************** login end****************************************/
+
+/****************************** membership****************************************/
+.membership_container{
+    width: 980px;
+    height: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.membership_box1{
+    width: 980px;
+    height: 580px;
+    padding-top: 10px;
+}
+.membership_box1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.membership_box1>p{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: #222;
+    font-weight: 500;
+}
+.membership_alljoin{
+    position: relative;
+    width: 190px;
+    height: 40px;
+    background: #fb4357;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.membership_alljoin a{
+    position: absolute;
+    width: 185px;
+    height: 35px;
+    color: #fff;
+    top: 2.5px;
+    left: 2.5px;
+    padding-top: 7px;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid #f07469;
+}
+
+.membership_box2{
+    width: 980px;
+    height: 420px;
+}
+.membership_box2 h1{
+    font-weight: 400;
+}
+.membership_gnb{
+    display: flex;
+    justify-content: space-between;
+}
+.membership_gnb>li{
+    width: 310px;
+    height: 300px;
+    border: 1px solid #ddd;
+}
+.membership_gnb>li h5{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.membership_lnb{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    list-style:disc;
+    padding-left: 19px;
+}
+.membership_lnb>li{
+    font-size: 13px;
+    font-weight: 400;
+    color: #222;
+    line-height: 25px;
+}
+.membership_lnb2{
+    list-style:disc;
+    margin-left: 15px;
+}
+.membership_box2 p{
+    margin-top: 40px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: #222;
+    font-weight: 500;
+}
+/****************************** membership end****************************************/
+
 /****************************** FOOTER (GYUJIN)****************************************/
 footer {
     min-width: 1040px;
