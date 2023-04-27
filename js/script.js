@@ -61,6 +61,48 @@ function video_mute() {
     }
 }
     
+function arrbtnR(){
+    const btnR = document.getElementsByClassName("swiper-button-next")[0];
+    const btnL = document.getElementsByClassName("swiper-button-prev")[0];
+    const swp = document.getElementById("movieChart_list");
+    swp.style.right = "1010px";
+    btnR.style.display = "none"
+    btnL.style.display = "flex"
+}
+function arrbtnL(){
+    const btnR = document.getElementsByClassName("swiper-button-next")[0];
+    const btnL = document.getElementsByClassName("swiper-button-prev")[0];
+    const swp = document.getElementById("movieChart_list");
+    swp.style.right = "0px";
+    btnL.style.display = "none"
+    btnR.style.display = "flex"
+}
+
+document.querySelector('.img_wrap').addEventListener('mouseover', function() {
+	document.querySelectorAll('.movieChart_btn_wrap').style.display = "block";
+});
+
+
+const imgWraps = document.querySelectorAll('.img_wrap');
+
+imgWraps.forEach(imgWrap => {
+  const movieChartBtnWrap = imgWrap.querySelector('.movieChart_btn_wrap');
+  const icon = imgWrap.querySelector('.movieAgeLimit_wrap');
+  const screenType = imgWrap.querySelector('.screenType_wrap');
+
+  imgWrap.addEventListener('mouseenter', () => {
+    movieChartBtnWrap.style.display = 'block';
+    icon.style.display = 'none';
+    screenType.style.display = 'none';
+  });
+
+  imgWrap.addEventListener('mouseleave', () => {
+    movieChartBtnWrap.style.display = 'none';
+    icon.style.display = 'flex';
+    screenType.style.display = 'block';
+  });
+});
+
 
 
 

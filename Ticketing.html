@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>예매</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -282,6 +282,38 @@
         </div>
         <div class="date">
             <div class="datetitle"><h3>날짜</h3></div>
+            <div class="datebox">
+                <ul class="datenav">
+                    <li class="calendar"><span>2023</span><h1>4</h1>
+                        <ul class="calendardate">
+                            <li><a href="#"><span>목</span><h3>27</h3></li></a>
+                            <li><a href="#"><span>금</span><h3>28</h3></li></a>
+                            <li><a href="#"><span>토</span><h3>29</h3></li></a>
+                            <li><a href="#"><span>일</span><h3>30</h3></li></a>
+                        </ul>
+                    </li>
+                    <li class="calendar"><span>2023</span><h1>5</h1>
+                        <ul class="calendardate">
+                        <li><a href="#"><span>월</span><h3>1</h3></li></a>
+                        <li><a href="#"><span>화</span><h3>2</h3></li></a>
+                        <li><a href="#"><span>수</span><h3>3</h3></li></a>
+                        <li><a href="#"><span>목</span><h3>4</h3></li></a>
+                        <li><a href="#"><span>금</span><h3>5</h3></li></a>
+                        <li><a href="#"><span>토</span><h3>6</h3></li></a>
+                        <li><a href="#"><span>일</span><h3>7</h3></li></a>
+                        <li><a href="#"><span>월</span><h3>8</h3></li></a>
+                        <li><a href="#"><span>화</span><h3>9</h3></li></a>
+                        <li><a href="#"><span>수</span><h3>10</h3></li></a>
+                        <li><a href="#"><span>목</span><h3>11</h3></li></a>
+                        <li><a href="#"><span>금</span><h3>12</h3></li></a>
+                        <li><a href="#"><span>토</span><h3>13</h3></li></a>
+                        <li><a href="#"><span>일</span><h3>14</h3></li></a>
+                        <li><a href="#"><span>월</span><h3>15</h3></li></a>
+                        <li><a href="#"><span>화</span><h3>16</h3></li></a>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="hour">
             <div class="hourtitle"><h3>시간</h3>
@@ -289,10 +321,27 @@
                     <p><span><i class="fa-regular fa-sun"></i></span><span class="morning">모닝</span></p>
                     <p><span><i class="fa-regular fa-moon"></i></span><span class="night">심야</span></p>
                 </div>
+                <div class="hourtextbox">
+                    <p class="hourtext">영화, 극장, 날짜를 선택해주세요.</p>
+                </div>
             </div>
         </div>
         </div>
     </div>
+    <div class="ticket-container">
+        <div class="ticket-row">
+        <div class="movie-selection"><h1>영화선택</h1></div>
+        <div class="theater-selection"><h1>극장선택</h1></div>
+        <div class="payment"><h1><i class="fa-solid fa-chevron-right"></i>좌석선택</h1><h1><i class="fa-solid fa-chevron-right"></i>결제</h1></div>
+        <div class="seat-selection"><i class="fa-solid fa-arrow-right"></i><h1>좌석선택</h1></div>
+        </div>
+    </div>
+    <div class="banner">
+    <div class="Ticketingimg">
+        <a href="#"><img src="images/Ticketing img.jpg" alt="Ticketing img"></a>
+    </div>
+    </div>
+    
     <footer>
         <ul class="policy_list">
             <li><a href="#" target="_blank">회사소개</a></li>
@@ -331,6 +380,14 @@
             </section>
         </article>
     </footer>
+    <div class="pull-box">
+        <div class="scroll-box" id="scroll-box" >
+            <a href="#" class="reserv animate__backInRight aniUtil_active" id="reserv"></a>
+            <div id="scrollUp" onclick="scrollUp()">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/Ticketing.js"></script>
     <script src="js/script.js"></script>

@@ -391,7 +391,7 @@ ul:after{
     width: 23px;
     height: 23px;
     font-size: 0;
-    background: transparent url(/images/bg_moreBtn.png) 
+    background: transparent url(/images/Store/bg_moreBtn.png) 
                 left top scroll no-repeat;
 }
 .CP-list>li:first-child
@@ -515,7 +515,7 @@ ul:after{
     width: 534px;
     padding: 25px 0 25px 43px;
     margin-right: 40px;
-    background: transparent url(/images/info_banner_icon.png) 376px 33px scroll no-repeat;
+    background: transparent url(/images/Store/info_banner_icon.png) 376px 33px scroll no-repeat;
 }
 .btn-info-use-title{
     display: block;
@@ -533,7 +533,7 @@ ul:after{
     left: 7px;
     width: 12px;
     height: 17px;
-    background: transparent url(/images/bg_info_use_arrow.png) left top scroll no-repeat;
+    background: transparent url(/images/Store/bg_info_use_arrow.png) left top scroll no-repeat;
 }
 .btn-info-use-subtitle{
     display: block;
@@ -580,7 +580,7 @@ ul:after{
     height: 25px;
     margin-top: 3px;
     margin-right: 5px;
-    background: transparent url(/images/bg_info_banner_call_icon.png) left top scroll no-repeat;
+    background: transparent url(/images/Store/bg_info_banner_call_icon.png) left top scroll no-repeat;
 }
 
 /******************** /INFO-USE ********************/
