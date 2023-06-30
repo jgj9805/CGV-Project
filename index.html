@@ -128,8 +128,8 @@
             <video autoplay="" id=main_video muted="">
                 <source src="vod/0424_zzanggu_1080x608.mp4" type="video/mp4">
             </video>
-                <strong id="ctl00_PlaceHolderContent_AD_MOVIE_NM" class="movieSelection_title">리바운드</strong>
-                <span id="ctl00_PlaceHolderContent_AD_DESCRIPTION_NM" class="movieSelection_txt">"한국영화 기강 잡는 장항준"<br>만족도 MAX! 예매로 확인 ▶</span>
+                <strong id="ctl00_PlaceHolderContent_AD_MOVIE_NM" class="movieSelection_title">짱구는 못말려</strong>
+                <span id="ctl00_PlaceHolderContent_AD_DESCRIPTION_NM" class="movieSelection_txt">짱구 출생의 비밀<br>에고편 최초 공개</span>
                 <div class="movieSelection_video_controller_wrap">
                     <a href="#" id="ctl00_PlaceHolderContent_AD_CLIP_DETAIL_URL" class="btn_movieSelection_detailView">상세보기 <span class="material-symbols-outlined arr">
                         arrow_forward_ios
@@ -150,9 +150,7 @@
                     <h3><a href="#none" class="active" id="btnMovie">무비차트</a></h3>
                     <h3><a href="#none" id="btnReserMovie">상영예정작</a></h3>
                 </div>
-                <a href="#" id="btn_allView_Movie" class="btn_allView">전체보기 <span class="material-symbols-outlined arr"> 
-                     arrow_forward_ios
-                    </span></a></a>
+                <a href="#" id="btn_allView_Movie" class="btn_allView">전체보기 </a>
             </div>
             
             <div class="swiper movieChart_list movieslide" id="movieChart_list" style="right: 0px;">
@@ -444,7 +442,7 @@
                 <div class="event_title_wrap">
                 <h3>EVENT</h3>
                 <a href="#" id="btn_allView_Event" class="btn_allView">전체보기</a>
-                <a href="#none" class="btn_eventControl">playStop</a>
+                <a href="#none" class="btn_eventControl" onclick="event_playstop()" id="event_playstop"><img src="images/play.png" alt="#"></a>
                 </div>
                 <div class="event_list_wrap">
                     <div class="swiper event_list">
@@ -452,7 +450,7 @@
                     
                          <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
                             <a href="#">
-                                <div class="img_wrap"><img src="images/FM_KillRom.jpg" alt="[킬링 로맨스]필름마크"></div>
+                                <div class="img_wrap img_large"><img src="images/FM_KillRom.jpg" alt="[킬링 로맨스]필름마크"></div>
                                 <strong>[킬링 로맨스]필름마크</strong>
                                 <span>2023.04.07~2023.04.28</span>
                             </a>
@@ -460,7 +458,7 @@
                             
                         <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
                             <a href="#">
-                                <div class="img_wrap"><img src="images/FM_Dream.jpg" alt="[드림]필름마크"></div>
+                                <div class="img_wrap img_large"><img src="images/FM_Dream.jpg" alt="[드림]필름마크"></div>
                                 <strong>[드림]필름마크</strong>
                                 <span>2023.04.20~2023.05.10</span>
                             </a>
@@ -468,7 +466,7 @@
                             
                         <div class="swiper-slide" style="width: 310.667px; margin-right: 24px;">
                             <a href="#">
-                                <div class="img_wrap"><img src="images/FM_Mario.jpg" alt="[슈퍼 마리오 브라더스]필름마크"></div>
+                                <div class="img_wrap img_large"><img src="images/FM_Mario.jpg" alt="[슈퍼 마리오 브라더스]필름마크"></div>
                                 <strong>[슈퍼 마리오 브라더스]필름마크</strong>
                                 <span>2023.04.20~2023.05.10</span>
                             </a>
@@ -478,8 +476,17 @@
                 </div>
             </div>
         </div>
+        <div class="SpecialHall_wrap">
+            <div class="contents">
+                <div class="SpecialHall_title_wrap">
+                    <h3>특별관</h3>
+                    <a href="#" id="allview_speical" class="btn_allView">전체보기</a>
+                </div>
+            </div>
+        </div>
     </div>
    
+
     
     <footer>
         <ul class="policy_list">
