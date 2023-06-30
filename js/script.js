@@ -103,7 +103,15 @@ imgWraps.forEach(imgWrap => {
   });
 });
 
-
+const playPauseButton = document.getElementById("event_playstop");
+function event_playstop(){
+    const event_play = document.getElementById("event_playstop").innerHTML
+    if (event_play == '<img src="../images/stop.png" alt="stop">') {
+        playPauseButton.innerHTML = '<img src="../images/play.png" alt="play">';
+      } else {
+        playPauseButton.innerHTML = '<img src="../images/stop.png" alt="stop">';
+      }
+}
 
 
 

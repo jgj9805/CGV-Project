@@ -300,9 +300,7 @@ h1 {
     background: rgba(255, 255, 255, 0.8)calc(100% - 11px) center/8px 13px scroll no-repeat;
     border-radius: 15px;
 }
-.arr{
-    font-size: 13px;
-}
+
 .btn_movieSelection_playStop {
     display: block;
     margin-left: 10px;
@@ -348,16 +346,6 @@ h1 {
 }
 .tabBtn_wrap {
     display: inline-flex;
-}
-.movieChartBeScreen_btn_wrap .btn_allView {
-    padding: 4px 15px 4px 15px;
-    font-size: 14px;
-    color: #222;
-    line-height: 1.429em;
-    background: transparent calc(100% - 7px) center/8px 13px scroll no-repeat;
-    border: 1px solid #e2e2e2;
-    border-radius: 15px;
-    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
 }
 .tabBtn_wrap h3 {
     height: auto;
@@ -701,16 +689,8 @@ i.cgvIcon.etc.ageDay:before {
     line-height: 1.423em;
     background-image: none;
 }
-h3 {
-    height: 41px;
-    margin: 30px 0 15px;
-    line-height: 41px;
-    text-align: center;
-    font-weight: 500;
-}
-.event_title_wrap .btn_allView {
+.btn_allView {
     float: right;
-    margin-top: 4px;
     padding: 4px 32px 4px 15px;
     font-size: 14px;
     color: #222;
@@ -727,10 +707,15 @@ h3 {
     top: 4px;
     width: 28px;
     height: 28px;
-    font-size: 0;
-    background: transparent url(../images/play.png) 10px center/11px 15px scroll no-repeat;
     border: 1px solid #e3e3e3;
     border-radius: 50%;
+}
+.btn_eventControl img{
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    width: 12px;
+    height: 15px;
 }
 .event_title_wrap:after {
     content: '';
@@ -755,6 +740,8 @@ h3 {
     width: 100%;
     height: 100%;
     position: relative;
+    margin: 0px auto;
+     overflow: hidden; 
     transition-property: transform;
 }
 .swiper-slide a {
@@ -765,8 +752,52 @@ h3 {
     height: 207px;
     border-radius: 10px;
 }
+.img_large img{
+    transition: all 0.3s linear;
+}
+.img_large img:hover{
+    top: 0;
+    transform: scale(1.1);
+}
+.swiper-slide a strong {
+    display: block; 
+    overflow: hidden;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #222;
+    line-height: 1.444em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.event_list_wrap .event_list .swiper-wrapper .swiper-slide a span {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.429em;
+}
 /**************************** EVENT END (GYUJIN) ****************************************/
 
+/***************************** Special-Hall (GYUJIN) *************************************/
+
+.SpecialHall_wrap {
+    padding: 60px 0 21px;
+}
+.SpecialHall_title_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.SpecialHall_title_wrap h3 {
+    height: auto;
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    color: #222;
+    line-height: 1.423em;
+}
+/***************************** Special-Hall END (GYUJIN) *************************************/
 /****************************** FOOTER (GYUJIN)******************************************/
 footer {
     min-width: 1040px;
